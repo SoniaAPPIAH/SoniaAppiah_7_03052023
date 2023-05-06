@@ -6,6 +6,7 @@ import Accommodation from './pages/accommodation.jsx'
 import About from './pages/about.jsx'
 import Banner from './components/banner.jsx'
 import Error from './pages/error.jsx'
+import Footer from './components/footer.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 )

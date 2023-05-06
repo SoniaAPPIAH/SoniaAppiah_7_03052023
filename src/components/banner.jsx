@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 import '../styles/banner.css'
 
 function Banner() {
   return (
     <header className="banner">
-      <img src={logo} alt="Logo Kasa" className="logoKasa" />
+      <img src={logo} alt="Logo Kasa" className="bannerLogo" />
       <nav className="navBar">
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A propos</Link>
+        <NavLink to="/">Accueil</NavLink>
+        <NavLink to="/about">A propos</NavLink>
       </nav>
     </header>
   )

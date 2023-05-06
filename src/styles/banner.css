@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .banner {
     display: flex;
     justify-content: space-between;
     margin: 2% 5% 2% 5%;
 }
 
-.logoKasa {
+.bannerLogo {
     width: 210px;
     height: auto;
 }
 
 .navBar {
-    width: 12%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,3 +24,13 @@
     color: #FF6060;
     font-size: 24px;
 }
+
+.navBar a:hover {
+    text-decoration: underline;
+} 
+
+.navBar a.active {
+    text-decoration: underline;
+}
+    
+
