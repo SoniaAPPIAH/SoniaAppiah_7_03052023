@@ -1,7 +1,7 @@
 function About() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <p>A propos</p>
       </header>
     </div>
