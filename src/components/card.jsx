@@ -1,11 +1,16 @@
 import Appartment from '../data/accommodation.json'
 import { Link } from 'react-router-dom'
+import '../styles/card.css'
 
 function Card() {
   return (
-    <div>
+    <div className="cardArea">
       {Appartment.map((apartment) => (
-        <Link key={apartment.id} to={`/accomodation/${apartment.id}`}>
+        <Link
+          key={apartment.id}
+          to={`/accomodation/${apartment.id}`}
+          className="card"
+        >
           <img src={apartment.cover} alt={apartment.title} />
           <p>{apartment.title}</p>
         </Link>

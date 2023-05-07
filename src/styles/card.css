@@ -1,0 +1,27 @@
+.cardArea {
+    background-color: #F6F6F6;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 25px;
+    margin: 2% 8% 2% 8%;
+}
+
+.card {
+    width: 340px;
+    height: 340px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.card img {
+    object-fit: cover;
+    width: 400px;
+}
+
+.card p {
+    position: absolute;
+    bottom: 0;
+}
