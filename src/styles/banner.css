@@ -2,35 +2,23 @@
 
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: 2% 6% 0% 6%;
 }
 
-.bannerLogo {
-    width: 180px;
-    height: auto;
+.bannerImg {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
-.navBar {
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navBar a {
+.bannerTitle {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: #FF6060;
-    font-size: 24px;
 }
-
-.navBar a:hover {
-    text-decoration: underline;
-} 
-
-.navBar a.active {
-    text-decoration: underline;
-}
-    
-

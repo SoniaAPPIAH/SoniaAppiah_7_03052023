@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home.jsx'
 import Accommodation from './pages/accommodation.jsx'
 import About from './pages/about.jsx'
-import Banner from './components/banner.jsx'
+import Header from './components/header.jsx'
 import Error from './pages/error.jsx'
 import Footer from './components/footer.jsx'
 
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
-      <Banner />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/accommodation" element={<Accommodation />} />
