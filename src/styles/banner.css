@@ -3,11 +3,11 @@
 .banner {
     display: flex;
     justify-content: space-between;
-    margin: 3% 8% 3% 8%;
+    margin: 2% 6% 0% 6%;
 }
 
 .bannerLogo {
-    width: 210px;
+    width: 180px;
     height: auto;
 }
 

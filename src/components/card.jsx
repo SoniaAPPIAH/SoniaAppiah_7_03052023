@@ -11,8 +11,12 @@ function Card() {
           to={`/accomodation/${apartment.id}`}
           className="card"
         >
-          <img src={apartment.cover} alt={apartment.title} />
-          <p>{apartment.title}</p>
+          <img
+            src={apartment.cover}
+            alt={apartment.title}
+            className="cardCover"
+          />
+          <p className="cardTitle">{apartment.title}</p>
         </Link>
       ))}
     </div>
