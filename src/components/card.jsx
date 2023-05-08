@@ -8,7 +8,7 @@ function Card() {
       {Appartment.map((apartment) => (
         <Link
           key={apartment.id}
-          to={`/accomodation/${apartment.id}`}
+          to={`/accommodation/${apartment.id}`}
           className="card"
         >
           <img
