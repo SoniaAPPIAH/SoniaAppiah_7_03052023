@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import flecheHaut from '../assets/flecheHaut.svg'
 import flecheBas from '../assets/flecheBas.svg'
 import '../styles/collapse.css'
@@ -10,9 +10,9 @@ const Collapse = (props) => {
       <div className="collapseTitle" onClick={() => setIsOpen(!isOpen)}>
         <p>{props.title}</p>
         {isOpen ? (
-          <img src={flecheHaut} alt="flèche haut" />
+          <img src={flecheBas} alt="flèche bas" className="collapseArrow" />
         ) : (
-          <img src={flecheBas} alt="flèche bas" />
+          <img src={flecheHaut} alt="flèche haut" className="collapseArrow" />
         )}
       </div>
       {isOpen ? null : <div className="collapseText">{props.text}</div>}

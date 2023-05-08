@@ -4,7 +4,9 @@
 .collapseTitle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #FF6060;
+    height: 70px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
@@ -16,9 +18,13 @@
 .collapseText {
     background-color: #F7F7F7;
     margin: 0% 15% 0% 15%;
-    padding: 10px 0 0 0;
+    padding-top: 10px;
     height: 100%;
     border-radius: 0 0px 5px 5px;
+}
+
+.collapseArrow {
+    height: 25%;
 }
 
 .collapseText p {
