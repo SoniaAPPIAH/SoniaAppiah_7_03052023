@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import flecheHaut from '../assets/flecheHaut.svg'
 import flecheBas from '../assets/flecheBas.svg'
-import '../styles/collapse.css'
 
 const Collapse = (props) => {
   const [isOpen, setIsOpen] = useState(true)
