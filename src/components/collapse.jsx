@@ -5,13 +5,13 @@ import flecheBas from '../assets/flecheBas.svg'
 const Collapse = (props) => {
   const [isOpen, setIsOpen] = useState(true)
   return (
-    <div className="collapse">
+    <div>
       <div className="collapseTitle" onClick={() => setIsOpen(!isOpen)}>
         <p>{props.title}</p>
         {isOpen ? (
-          <img src={flecheBas} alt="flèche bas" className="collapseArrow" />
+          <img src={flecheHaut} alt="flèche haut" />
         ) : (
-          <img src={flecheHaut} alt="flèche haut" className="collapseArrow" />
+          <img src={flecheBas} alt="flèche bas" />
         )}
       </div>
       {isOpen ? null : <div className="collapseText">{props.text}</div>}

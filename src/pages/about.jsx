@@ -11,11 +11,13 @@ function About() {
         <img src={Image} alt="imageAbout" className="bannerImg" />
       </Banner>
       {collapse.map((collapse) => (
-        <Collapse
-          title={collapse.title}
-          text={<p>{collapse.text}</p>}
-          key={collapse.id}
-        />
+        <div className="collapse">
+          <Collapse
+            title={collapse.title}
+            text={<p>{collapse.text}</p>}
+            key={collapse.id}
+          />
+        </div>
       ))}
     </div>
   )

@@ -48,22 +48,3 @@
 
 /* CSS Collapse */
 
-.accommodationCollapse {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.collapseItem1 {
-    width: 100%;
-    max-width: 800px;
-    min-width: 300px;
-    margin-right: 10px;
-}
-
-.collapseItem2 {
-    width: 100%;
-    max-width: 800px;
-    min-width: 300px;
-    margin-left: 10px;
-}
