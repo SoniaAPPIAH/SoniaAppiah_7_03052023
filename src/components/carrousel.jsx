@@ -28,6 +28,9 @@ const Carrousel = ({ Accommodation }) => {
     <div className="carrousel">
       {!showArray ? (
         <div>
+          <p className="bulletPoints">
+            {current + 1}/{length}
+          </p>
           <img
             onClick={prevSlide}
             className="arrowLeft"

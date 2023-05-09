@@ -40,11 +40,11 @@ const Accommodation = () => {
               />
             </div>
             <div className="accommodationStar">
-              {[...Array(parseInt(Accommodation.rating))].map((star) => (
-                <img src={starRed} alt="etoile rouge" key={star} />
+              {[...Array(parseInt(Accommodation.rating))].map((e, i) => (
+                <img src={starRed} alt="etoile rouge" key={i} />
               ))}
-              {[...Array(5 - parseInt(Accommodation.rating))].map((star) => (
-                <img src={starGrey} alt="etoile gris" key={star} />
+              {[...Array(5 - parseInt(Accommodation.rating))].map((e, i) => (
+                <img src={starGrey} alt="etoile gris" key={i} />
               ))}
             </div>
           </div>
@@ -59,8 +59,8 @@ const Accommodation = () => {
           <div className="collapseItem2">
             <Collapse
               title="Equipements"
-              text={Accommodation.equipments.map((equipment) => (
-                <li key={equipment}>{equipment}</li>
+              text={Accommodation.equipments.map((equipments) => (
+                <li key={equipments}>{equipments}</li>
               ))}
             />
           </div>
