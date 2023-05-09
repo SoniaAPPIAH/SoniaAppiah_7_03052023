@@ -29,6 +29,20 @@
 
 .accommodationProfil {
     display: flex;
+    align-items: center;
+}
+
+.accommodationProfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 36px;
+    object-fit: cover;
+}
+
+.accommodationProfil p {
+    font-size: 18px;
+    margin-right: 20px;
+
 }
 
 /* CSS Tag */
@@ -46,5 +60,4 @@
     margin-right: 15px;
 }
 
-/* CSS Collapse */
 

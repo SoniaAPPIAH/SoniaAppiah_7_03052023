@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import arrowLeft from '../assets/arrowLeft.svg'
 import arrowRight from '../assets/arrowRight.svg'
-import '../styles/caroussel.css'
+import '../styles/carrousel.css'
 
 const Carrousel = ({ Accommodation }) => {
   const [current, setcurrent] = useState(0)
@@ -9,13 +9,10 @@ const Carrousel = ({ Accommodation }) => {
 
   const nextSlide = () => {
     setcurrent(current === length - 1 ? 0 : current + 1)
-    console.log(current)
-    console.log(length)
   }
 
   const prevSlide = () => {
     setcurrent(current === 0 ? length - 1 : current - 1)
-    console.log(current)
   }
 
   const showArray = length === 1 ? true : false

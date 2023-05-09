@@ -4,6 +4,8 @@ import Accommodations from '../data/accommodation.json'
 import Carrousel from '../components/carrousel.jsx'
 import Collapse from '../components/collapse.jsx'
 import '../styles/accommodation.css'
+import starRed from '../assets/starRed.svg'
+import starGrey from '../assets/starGrey.svg'
 
 const Accommodation = () => {
   const { accommodationId } = useParams()
@@ -24,8 +26,8 @@ const Accommodation = () => {
               <h2>{Accommodation.location}</h2>
             </div>
             <div className="accommodationTag">
-              {Accommodation.tags.map((tag) => (
-                <p>{tag}</p>
+              {Accommodation.tags.map((tag, index) => (
+                <p key={index}>{tag}</p>
               ))}
             </div>
           </div>
@@ -37,7 +39,14 @@ const Accommodation = () => {
                 alt={Accommodation.host.name}
               />
             </div>
-            <div className="accommodationStar"></div>
+            <div className="accommodationStar">
+              {[...Array(parseInt(Accommodation.rating))].map((star) => (
+                <img src={starRed} alt="etoile rouge" key={star} />
+              ))}
+              {[...Array(5 - parseInt(Accommodation.rating))].map((star) => (
+                <img src={starGrey} alt="etoile gris" key={star} />
+              ))}
+            </div>
           </div>
         </div>
         <div className="accommodationCollapse">
@@ -51,7 +60,7 @@ const Accommodation = () => {
             <Collapse
               title="Equipements"
               text={Accommodation.equipments.map((equipment) => (
-                <li>{equipment}</li>
+                <li key={equipment}>{equipment}</li>
               ))}
             />
           </div>
