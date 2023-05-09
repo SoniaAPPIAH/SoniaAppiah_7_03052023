@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import Accommodations from '../data/accommodation.json'
+import Carrousel from '../components/carrousel.jsx'
 import Collapse from '../components/collapse.jsx'
 import '../styles/accommodation.css'
 
@@ -15,6 +16,7 @@ const Accommodation = () => {
   } else {
     return (
       <div>
+        <Carrousel Accommodation={Accommodation} />
         <div className="accommodationDescription">
           <div className="accommodationLeft">
             <div>

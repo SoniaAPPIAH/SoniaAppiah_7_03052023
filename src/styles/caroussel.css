@@ -1,0 +1,39 @@
+.carrousel {
+    margin: 2% 6% 0% 6%;
+    position: relative;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    height: 80px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.arrowLeft{
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    height: 80px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.slide.active {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
