@@ -2,7 +2,7 @@ import Banner from '../components/banner.jsx'
 import Image from '../assets/bannerAbout.jpg'
 import Collapse from '../components/collapse.jsx'
 import collapse from '../data/about.json'
-import '../styles/collapseAbout.css'
+import '../styles/collapse.css'
 
 function About() {
   return (
