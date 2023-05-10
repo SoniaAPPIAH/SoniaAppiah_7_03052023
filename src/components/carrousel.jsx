@@ -17,13 +17,6 @@ const Carrousel = ({ Accommodation }) => {
 
   const showArray = length === 1 ? true : false
 
-  if (
-    !Array.isArray(Accommodation.pictures) ||
-    Accommodation.pictures.length <= 0
-  ) {
-    return null
-  }
-
   return (
     <div className="carrousel">
       {!showArray ? (
@@ -45,13 +38,13 @@ const Carrousel = ({ Accommodation }) => {
           />
         </div>
       ) : null}
-      {Accommodation.pictures.map((slide, index) => {
+      {Accommodation.pictures.map((slide, pictures) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
+            className={pictures === current ? 'slide active' : ''}
+            key={pictures}
           >
-            {index === current && (
+            {pictures === current && (
               <img src={slide} alt="logement" className="images" />
             )}
           </div>
