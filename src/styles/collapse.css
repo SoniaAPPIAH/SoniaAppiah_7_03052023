@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-
 .collapse {
     margin: 2% 15% 0% 15%;
 }
@@ -45,10 +41,6 @@
     margin-top: 30px;
 }
 
-.collapseArrow {
-    height: 25%;
-}
-
 .collapseText p {
     color: #FF6060;
     font-family: 'Montserrat', sans-serif;
@@ -56,7 +48,6 @@
     width: 90%;
     padding: 0 0 20px 25px;
     line-height: 40px;
-
 }
 
 /* Accommodation Page */
@@ -70,13 +61,13 @@
 
 .collapseItem1 {
     width: 95%;
-    min-width: 300px;
+    min-width: 290px;
     margin-right: 40px;
 }
 
 .collapseItem2 {
     width: 95%;
-    min-width: 300px;
+    min-width: 290px;
     margin-left: 40px;
 }
 
@@ -97,5 +88,38 @@
     .collapseItem2 {
         width: 100%;
         margin-left: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .collapse {
+        margin: 15px 10px;
+    }
+
+    .collapseTitle {
+        height: 30px;
+        font-size: 12px;
+        padding: 0 3%;
+    }
+    
+    .collapseText li {
+        font-size: 12px;
+        padding: 0 0 20px 10px;
+        line-height: 0;
+    }
+        
+    .collapseText li:first-child {
+        margin-top: 20px;
+    }
+    
+    .collapseText p {
+        font-size: 12px;
+        padding: 0 0 10px 10px;
+        line-height: 23px;
+    
+    }
+
+    .accommodationCollapse {
+        margin: 15px 10px;
     }
 }
