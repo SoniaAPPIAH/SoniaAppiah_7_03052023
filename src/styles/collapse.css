@@ -59,10 +59,10 @@
 
 }
 
-/* Accommodation PAge */
+/* Accommodation Page */
 
 .accommodationCollapse {
-    margin: 0% 6% 0% 6%;
+    margin: 2% 6% 0% 6%;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -78,4 +78,24 @@
     width: 95%;
     min-width: 300px;
     margin-left: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 830px) {
+    .accommodationCollapse {
+        margin: 3% 6% 0% 6%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collapseItem1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    
+    .collapseItem2 {
+        width: 100%;
+        margin-left: 0;
+    }
 }

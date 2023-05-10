@@ -49,3 +49,57 @@
     font-size: 25px;
     color: white;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 830px) {
+    .carrousel {
+        margin: 2% 6% 0% 6%;
+        height: 300px;
+    }
+
+    .arrowRight {
+        right: 20px;
+        height: 60px;
+        width: 50px;
+    }
+    
+    .arrowLeft{
+        left: 20px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .bulletPoints{
+        top: 80%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .carrousel {
+        margin: 15px 10px 0 10px;
+        height: 250px;
+    }
+
+    .images {
+        border-radius: 10px;
+    }
+
+    .arrowRight {
+        right: 10px;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .arrowLeft{
+        left: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .bulletPoints{
+        top: 80%;
+        font-size: 20px;
+    }
+}
