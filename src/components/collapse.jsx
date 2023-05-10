@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import arrowUp from '../assets/arrowDown.svg'
+import arrowUp from '../assets/arrowUp.svg'
 import arrowDown from '../assets/arrowDown.svg'
 
 const Collapse = (props) => {
@@ -9,9 +9,9 @@ const Collapse = (props) => {
       <div className="collapseTitle" onClick={() => setIsOpen(!isOpen)}>
         <p>{props.title}</p>
         {isOpen ? (
-          <img src={arrowUp} alt="flèche haut" />
+          <img src={arrowDown} alt="flèche bas" className="collapseArrow" />
         ) : (
-          <img src={arrowDown} alt="flèche bas" />
+          <img src={arrowUp} alt="flèche haut" className="collapseArrow" />
         )}
       </div>
       {isOpen ? null : <div className="collapseText">{props.text}</div>}

@@ -101,7 +101,6 @@
     }
 
     .bulletPoints{
-        top: 80%;
-        font-size: 20px;
+        display: none;
     }
 }

@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.collapseArrow {
+    height: 25%;
+}
+
 .collapseText {
     position: relative;
     background-color: #F7F7F7;
